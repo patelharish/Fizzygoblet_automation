@@ -9,10 +9,10 @@ public class LoginPage {
 
 	WebDriver ldriver;
 	
-	@FindBy(xpath="a[aria-label='Sign in'] span[class='desktop-only']")
+	@FindBy(xpath="(//span[@class='desktop-only'][normalize-space()='Sign in'])[1]")
 	private WebElement loginBtn;
 	
-	@FindBy(xpath="(//input[@id='customer_email'])[2]")
+	@FindBy(xpath="//div[@id=\"login_email\"]")
 	private WebElement useremail;
 	
 	@FindBy(xpath="(//input[@id='customer_password'])[2]")

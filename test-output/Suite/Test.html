@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jan 30 16:58:21 IST 2025</td>
+<td>Started on:</td><td>Thu Jan 30 17:37:44 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>8 seconds (8239 ms)</td>
+<tr><td>Total time:</td><td>11 seconds (11784 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,23 +76,65 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='test.LoginTest.testLogin()'><b>testLogin</b><br>Test class: test.LoginTest</td>
-<td><div><pre>org.testng.TestNGException: 
-Cannot inject @Test annotated Method [testLogin] with [class java.lang.String, class java.lang.String].
-For more information on native dependency injection please refer to https://testng.org/#_dependency_injection
+<td title='test.LoginTest.testLogin()'><b>testLogin</b><br>Test class: test.LoginTest<br>Parameters: org.testng.TestRunner@618c5d94</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=132.0.6834.83)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [536fb3b9fcbe6ed43047b47d4a76eaf0, sendKeysToElement {id=f.F26B307172958468AC7E9319FE913E0B.d.4DDC3FE425A3C3C666551113EABF13BF.e.50, value=[Ljava.lang.CharSequence;@631e06ab}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.83, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60324}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60324/devtoo..., se:cdpVersion: 132.0.6834.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (536fb3b9fcbe6ed43047b47d4a76eaf0)] -&gt; xpath: (//span[@class=&apos;desktop-only&apos;][normalize-space()=&apos;Sign in&apos;])[1]]
+Session ID: 536fb3b9fcbe6ed43047b47d4a76eaf0
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.sendKeys(Unknown Source)
+	at pages.LoginPage.enterEmail(LoginPage.java:34)
+	at test.LoginTest.testLogin(LoginTest.java:17)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace534753234", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace534753234'><pre>org.testng.TestNGException: 
-Cannot inject @Test annotated Method [testLogin] with [class java.lang.String, class java.lang.String].
-For more information on native dependency injection please refer to https://testng.org/#_dependency_injection
-	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:442)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:347)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:699)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:885)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:734)
-	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
-	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:946)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1947941827", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1947941827'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=132.0.6834.83)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [536fb3b9fcbe6ed43047b47d4a76eaf0, sendKeysToElement {id=f.F26B307172958468AC7E9319FE913E0B.d.4DDC3FE425A3C3C666551113EABF13BF.e.50, value=[Ljava.lang.CharSequence;@631e06ab}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.83, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60324}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60324/devtoo..., se:cdpVersion: 132.0.6834.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (536fb3b9fcbe6ed43047b47d4a76eaf0)] -&gt; xpath: (//span[@class=&apos;desktop-only&apos;][normalize-space()=&apos;Sign in&apos;])[1]]
+Session ID: 536fb3b9fcbe6ed43047b47d4a76eaf0
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.sendKeys(Unknown Source)
+	at pages.LoginPage.enterEmail(LoginPage.java:34)
+	at test.LoginTest.testLogin(LoginTest.java:17)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
@@ -113,8 +155,8 @@ For more information on native dependency injection please refer to https://test
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>0</td>
-<td>test.LoginTest@b3ca52e</td></tr>
+<td>4</td>
+<td>test.LoginTest@45c7e403</td></tr>
 </table><p>
 </body>
 </html>
