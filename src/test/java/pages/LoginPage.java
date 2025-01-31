@@ -12,7 +12,7 @@ public class LoginPage {
 	@FindBy(xpath="(//span[@class='desktop-only'][normalize-space()='Sign in'])[1]")
 	private WebElement loginBtn;
 	
-	@FindBy(xpath="//div[@id=\"login_email\"]")
+	@FindBy(xpath="(//input[@id='customer_email'])[2]")
 	private WebElement useremail;
 	
 	@FindBy(xpath="(//input[@id='customer_password'])[2]")
@@ -31,15 +31,15 @@ public class LoginPage {
 	}
 	
 	public void enterEmail(String uname) {
-		loginBtn.sendKeys(uname);
+		useremail.sendKeys(uname);
 	}
 	
 	public void enterPassword(String pwd) {
-		loginBtn.sendKeys(pwd);
+		password.sendKeys(pwd);
 	}
 	
 	public void clickOnSignInBtn() {
-		loginBtn.click();
+		signBtn.click();
 	}
 	
 }
