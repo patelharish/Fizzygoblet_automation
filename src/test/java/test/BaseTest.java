@@ -39,6 +39,7 @@ public class BaseTest {
 			System.out.println("Please enter valid browser name");
 		}
 		driver.get(baseURL);
+		//driver.manage().window().maximize();
 	}
 
 	@AfterClass

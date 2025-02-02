@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.LoginTest">
+      <class name="test.PlpTest">
         <methods>
           <include name="tearDown"/>
-          <include name="testLogin" invocation-numbers="0"/>
           <include name="setUp"/>
+          <include name="plpFilters"/>
         </methods>
-      </class> <!-- test.LoginTest -->
+      </class> <!-- test.PlpTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

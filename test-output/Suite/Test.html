@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jan 31 09:35:23 IST 2025</td>
+<td>Started on:</td><td>Sun Feb 02 22:28:09 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>12 seconds (12760 ms)</td>
+<tr><td>Total time:</td><td>18 seconds (18863 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,16 +76,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='test.LoginTest.testLogin()'><b>testLogin</b><br>Test class: test.LoginTest<br>Parameters: org.testng.TestRunner@5b40ceb</td>
-<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=132.0.6834.83)
+<td title='test.PlpTest.plpFilters()'><b>plpFilters</b><br>Test class: test.PlpTest</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;overlay-text__button button altcolour&quot;&gt;...&lt;/span&gt; is not clickable at point (505, 378). Other element would receive the click: &lt;span class=&quot;overlay-text__button button altcolour&quot;&gt;...&lt;/span&gt;
+  (Session info: MicrosoftEdge=132.0.2957.127)
 Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [602c259fca0c791c9e2a10e8fc4d6eb3, sendKeysToElement {id=f.9EB123FA59C16FA383FFB26374817832.d.F9EEE43F0AA6EFC8475D16BA6035D5AD.e.47, value=[Ljava.lang.CharSequence;@2a3591c5}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.83, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50006}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50006/devtoo..., se:cdpVersion: 132.0.6834.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (602c259fca0c791c9e2a10e8fc4d6eb3)] -&gt; xpath: (//span[@class=&apos;desktop-only&apos;][normalize-space()=&apos;Sign in&apos;])[1]]
-Session ID: 602c259fca0c791c9e2a10e8fc4d6eb3
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [79dd18c5119261b78b17ed211557db46, clickElement {id=f.A4B6D71088442E24883C3120724DE36C.d.50ABA4BFF3AF166EF0BA7602F874ACDD.e.52}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 132.0.2957.127, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:65402}, msedge: {msedgedriverVersion: 132.0.2957.140 (a81e27b375d..., userDataDir: C:\Users\admin\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65402/devtoo..., se:cdpVersion: 132.0.2957.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (79dd18c5119261b78b17ed211557db46)] -&gt; xpath: (//span[@class=&apos;overlay-text__button button altcolour&apos;][normalize-space()=&apos;Shop Now&apos;])[1]]
+Session ID: 79dd18c5119261b78b17ed211557db46
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -94,22 +94,22 @@ Session ID: 602c259fca0c791c9e2a10e8fc4d6eb3
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy14.sendKeys(Unknown Source)
-	at pages.LoginPage.enterEmail(LoginPage.java:34)
-	at test.LoginTest.testLogin(LoginTest.java:17)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at pages.PlpPage.clickOnShopBtn(PlpPage.java:27)
+	at test.PlpTest.plpFilters(PlpTest.java:12)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace785625589", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace785625589'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=132.0.6834.83)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1056862342", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1056862342'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;overlay-text__button button altcolour&quot;&gt;...&lt;/span&gt; is not clickable at point (505, 378). Other element would receive the click: &lt;span class=&quot;overlay-text__button button altcolour&quot;&gt;...&lt;/span&gt;
+  (Session info: MicrosoftEdge=132.0.2957.127)
 Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [602c259fca0c791c9e2a10e8fc4d6eb3, sendKeysToElement {id=f.9EB123FA59C16FA383FFB26374817832.d.F9EEE43F0AA6EFC8475D16BA6035D5AD.e.47, value=[Ljava.lang.CharSequence;@2a3591c5}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.83, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50006}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50006/devtoo..., se:cdpVersion: 132.0.6834.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (602c259fca0c791c9e2a10e8fc4d6eb3)] -&gt; xpath: (//span[@class=&apos;desktop-only&apos;][normalize-space()=&apos;Sign in&apos;])[1]]
-Session ID: 602c259fca0c791c9e2a10e8fc4d6eb3
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [79dd18c5119261b78b17ed211557db46, clickElement {id=f.A4B6D71088442E24883C3120724DE36C.d.50ABA4BFF3AF166EF0BA7602F874ACDD.e.52}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 132.0.2957.127, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:65402}, msedge: {msedgedriverVersion: 132.0.2957.140 (a81e27b375d..., userDataDir: C:\Users\admin\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65402/devtoo..., se:cdpVersion: 132.0.2957.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (79dd18c5119261b78b17ed211557db46)] -&gt; xpath: (//span[@class=&apos;overlay-text__button button altcolour&apos;][normalize-space()=&apos;Shop Now&apos;])[1]]
+Session ID: 79dd18c5119261b78b17ed211557db46
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
@@ -121,13 +121,13 @@ Session ID: 602c259fca0c791c9e2a10e8fc4d6eb3
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy14.sendKeys(Unknown Source)
-	at pages.LoginPage.enterEmail(LoginPage.java:34)
-	at test.LoginTest.testLogin(LoginTest.java:17)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at pages.PlpPage.clickOnShopBtn(PlpPage.java:27)
+	at test.PlpTest.plpFilters(PlpTest.java:12)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -155,8 +155,8 @@ Session ID: 602c259fca0c791c9e2a10e8fc4d6eb3
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>3</td>
-<td>test.LoginTest@45c7e403</td></tr>
+<td>1</td>
+<td>test.PlpTest@2002fc1d</td></tr>
 </table><p>
 </body>
 </html>

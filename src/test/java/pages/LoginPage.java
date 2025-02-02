@@ -41,5 +41,4 @@ public class LoginPage {
 	public void clickOnSignInBtn() {
 		signBtn.click();
 	}
-	
 }
