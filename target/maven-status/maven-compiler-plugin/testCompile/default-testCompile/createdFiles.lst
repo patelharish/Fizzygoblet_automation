@@ -4,6 +4,5 @@ pages\PlpPage.class
 pages\LoginPage.class
 utils\ScreenshotUtility.class
 utils\ExtentReportManager.class
-test\g3fashionHomeLinks.class
 test\PlpTest.class
 utils\ReadConfig.class

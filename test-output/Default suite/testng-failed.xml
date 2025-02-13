@@ -6,6 +6,9 @@
       <class name="test.g3fashionHomeLinks">
         <methods>
           <include name="links"/>
+          <include name="tearDown"/>
+          <include name="demo"/>
+          <include name="skipped"/>
         </methods>
       </class> <!-- test.g3fashionHomeLinks -->
     </classes>
