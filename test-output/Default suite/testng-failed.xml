@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.PlpTest">
+      <class name="test.g3fashionHomeLinks">
         <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="plpFilters"/>
+          <include name="links"/>
         </methods>
-      </class> <!-- test.PlpTest -->
+      </class> <!-- test.g3fashionHomeLinks -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
