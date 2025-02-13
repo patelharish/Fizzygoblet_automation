@@ -4,13 +4,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
 public class g3fashionHomeLinks {
 
+	WebDriver driver;
 	@Test
-	public void links(){
-		WebDriver driver;
+	public void links(){		
 		driver = new ChromeDriver();
 		driver.get("https://g3fashion.com/");
 		driver.manage().window().maximize();
@@ -52,9 +53,21 @@ public class g3fashionHomeLinks {
 		Assert.assertEquals(driver.getTitle(), "Men Waistcoat Sets: Buy Kurta Jacket Set for Men Online");
 		String ws = driver.findElement(By.xpath("(//h1[normalize-space()='Men Kurta Jacket Set'])[1]")).getText();
 		Assert.assertEquals(ws, "Men Kurta Jacket Set");
-		driver.navigate().back();		
+		driver.navigate().back();				
+	}
+	
+	@Test
+	public void demo() {
+		driver.findElement(By.id("hgdsuysgyd"));
+	}
+	
+	@Test(dependsOnMethods = {"demo"})
+	public void skipped() {
+		Assert.assertTrue(false);
+	}
+	
+	@AfterTest
+	public void tearDown() {
 		driver.quit();
-			
-		
 	}
 }
