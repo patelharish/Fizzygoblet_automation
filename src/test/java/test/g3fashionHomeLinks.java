@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 public class g3fashionHomeLinks {
 
 	WebDriver driver;
-	@Test
+	@Test(priority = 1)
 	public void links(){		
 		driver = new ChromeDriver();
 		driver.get("https://g3fashion.com/");
@@ -56,12 +56,12 @@ public class g3fashionHomeLinks {
 		driver.navigate().back();				
 	}
 	
-	@Test
+	@Test(priority = 2)
 	public void demo() {
 		driver.findElement(By.id("hgdsuysgyd"));
 	}
 	
-	@Test(dependsOnMethods = {"demo"})
+	@Test(priority = 3, dependsOnMethods = {"demo"})
 	public void skipped() {
 		Assert.assertTrue(false);
 	}
